@@ -4,11 +4,24 @@
   padding: 0;
 }
 
+body {
+  background: white;
+}
+
 .header {
-  max-width: 1000px;
   width: 100%;
+  background: #E76F51;
   margin: 0 auto;
+  padding: 2rem;
   text-align: center;
+  color: white;
+}
+.header__title {
+  margin: 0;
+  text-transform: uppercase;
+}
+.header__caption {
+  padding: 1rem 0 0 0;
 }
 
 .search-container {
@@ -16,6 +29,12 @@
   width: 100%;
   margin: 0 auto;
   text-align: center;
+}
+
+.search-container__input {
+  width: 50%;
+  margin: 2rem 0;
+  padding: 0.8rem;
 }
 
 .content {

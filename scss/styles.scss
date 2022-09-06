@@ -4,12 +4,31 @@
     padding: 0;
 }
 
-.header {
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
+// variables
+body {
+    background: white;
 }
+
+// header
+
+.header {
+    width: 100%;
+    background: #E76F51;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+
+    &__title {
+        margin: 0;
+        text-transform: uppercase;
+    }
+    &__caption {
+        padding: 1rem 0 0 0;
+    }
+}
+
+// search
 
 .search-container {
     max-width: 1000px;
@@ -17,6 +36,14 @@
     margin: 0 auto;
     text-align: center;
 }
+
+.search-container__input {
+    width: 50%;
+    margin: 2rem 0;
+    padding: .8rem;
+}
+
+// main content
 
 .content {
     display: grid;
