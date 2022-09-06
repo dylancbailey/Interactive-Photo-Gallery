@@ -6,6 +6,7 @@
 
 body {
   background: white;
+  font-family: "Montserrat", sans-serif;
 }
 
 .header {
@@ -20,9 +21,11 @@ body {
 .header__title {
   margin: 0;
   text-transform: uppercase;
+  font-weight: 700;
 }
 .header__caption {
   padding: 1rem 0 0 0;
+  font-weight: 400;
 }
 
 .search-container {
@@ -37,6 +40,7 @@ body {
   padding: 0.8rem;
   margin-top: 2rem;
   outline: transparent;
+  font-weight: 300;
 }
 .search-container__input:focus {
   outline: none;
@@ -46,22 +50,30 @@ body {
 .content {
   display: grid;
   max-width: 1000px;
-  width: 100%;
   margin: 3rem auto;
-  padding: 2rem;
-  background: rgb(236, 236, 236);
 }
 
 .content__gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-rows: auto;
   gap: 30px;
 }
+.content__gallery__link {
+  text-align: center;
+}
 
 img {
-  width: 100%;
-  height: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 0 2rem 0;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /*# sourceMappingURL=styles.css.map */
