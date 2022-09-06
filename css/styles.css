@@ -22,6 +22,7 @@ body {
   margin: 0;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 3rem;
 }
 .header__caption {
   padding: 1rem 0 0 0;
@@ -34,17 +35,22 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-
 .search-container__input {
-  width: 50%;
+  width: 45%;
   padding: 0.8rem;
-  margin-top: 2rem;
-  outline: transparent;
   font-weight: 300;
+  margin-top: 2rem;
+  outline: 2px solid white;
+  border-radius: 10px;
+  transition: width 0.5s ease, outline 0.2s ease;
 }
 .search-container__input:focus {
-  outline: none;
-  border: 2px solid #2A9D8F;
+  width: 60%;
+  outline: 2px solid #2A9D8F;
+}
+
+input:focus {
+  width: 75%;
 }
 
 .content {
@@ -74,6 +80,10 @@ img {
   padding: 0 0 2rem 0;
   text-align: center;
   color: rgba(0, 0, 0, 0.3);
+}
+
+.is-hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -25,6 +25,7 @@ body {
         margin: 0;
         text-transform: uppercase;
         font-weight: 700;
+        font-size: 3rem;
     }
     &__caption {
         padding: 1rem 0 0 0;
@@ -39,19 +40,26 @@ body {
     width: 100%;
     margin: 0 auto;
     text-align: center;
+
+    &__input {
+        width: 45%;
+        padding: .8rem;
+        font-weight: 300;
+        margin-top: 2rem;
+        outline: 2px solid white;
+        border-radius: 10px;
+        transition: width .5s ease, outline .2s ease;
+
+        &:focus {
+            width: 60%;
+            outline: 2px solid #2A9D8F;
+        }
+    }
 }
 
-.search-container__input {
-    width: 50%;
-    padding: .8rem;
-    margin-top: 2rem;
-    outline: transparent;
-    font-weight: 300;
 
-    &:focus {
-        outline: none;
-        border: 2px solid #2A9D8F;
-    }
+input:focus {
+    width: 75%;
 }
 
 // main content
@@ -85,4 +93,9 @@ img {
     padding: 0 0 2rem 0;
     text-align: center;
     color: rgba(0,0,0,.3);
+}
+
+// is-hidden
+.is-hidden {
+    display: none;
 }

@@ -19,14 +19,14 @@
         <h3 class="header__caption">With built-in search function!</h3>
 
         <div class="search-container">
-            <input class="search-container__input" id="search" name="search" type="search" placeholder="Search for an image.">
+            <input class="search-container__input" id="search" onkeyup="search_img()" name="search" type="search" placeholder="Search for an image.">
         </div>
     </header>
 
     <main class="content">
         <div class="content__gallery">
             <a class="content__gallery__link" href="photos/01.jpg" data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
-                <img src="photos/thumbnails/01.jpg" alt="Hay Bales">
+                <img src="photos/thumbnails/01.jpg" class="img" alt="Hay Bales">
             </a>
             <a class="content__gallery__link" href="photos/02.jpg" data-caption="The lake was so calm today. We had a great view of the snow on the mountains from here.">
                 <img src="photos/thumbnails/02.jpg" alt="Lake">
