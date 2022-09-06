@@ -1,2 +1,2 @@
 // Initialize baguetteBox
-baguetteBox.run('.gallery');
+baguetteBox.run('.content__gallery');
