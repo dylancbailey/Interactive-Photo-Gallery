@@ -23,3 +23,20 @@
         }
     }
 }
+
+.clear-btn {
+    display: block;
+    background: darken($bg-color, 5%);
+    font-weight: 300;
+    font-size: .7rem;
+    color: $text-color;
+    border: none;
+    margin: 1rem auto 0 auto;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    transition: background .2s ease;
+
+    &:hover {
+        background-color: lighten($bg-color, 2%);
+    }
+}

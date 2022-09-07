@@ -383,6 +383,22 @@ body {
   width: 55%;
 }
 
+.clear-btn {
+  display: block;
+  background: #e45c3b;
+  font-weight: 300;
+  font-size: 0.7rem;
+  color: #fff;
+  border: none;
+  margin: 1rem auto 0 auto;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+.clear-btn:hover {
+  background-color: #e8765a;
+}
+
 /************************************
             MAIN STYLING
 ************************************/
