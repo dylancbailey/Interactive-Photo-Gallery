@@ -5,7 +5,6 @@ baguetteBox.run('.content__gallery');
 // const search = new Filter('search', 'data-caption');
 
 // Custom search feature
-
 const img_search = document.getElementById('search');
 img_search.addEventListener('keyup', e => {
     let currentValue = e.target.value.toLowerCase();
@@ -21,7 +20,6 @@ img_search.addEventListener('keyup', e => {
 });
 
 // Opacity animation
-
 const img_cards = document.querySelectorAll('.content__gallery__link');
 img_cards.forEach(img => {
     let randomDelay = Math.floor(Math.random() * 500);
