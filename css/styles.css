@@ -425,7 +425,7 @@ body {
 img {
   max-width: 200px;
   height: auto;
-  box-shadow: -5px 5px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: -5px 5px 3px rgba(0, 0, 0, 0.2);
 }
 
 /************************************
