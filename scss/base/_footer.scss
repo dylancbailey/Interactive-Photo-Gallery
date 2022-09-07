@@ -1,0 +1,9 @@
+@use '../utilities/variables' as *;
+
+.footer {
+    max-width: $max-width;
+    margin: 2rem auto 0 auto;
+    padding: 0 0 2rem 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+}

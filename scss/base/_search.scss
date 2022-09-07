@@ -1,0 +1,23 @@
+@use '../utilities/variables' as *;
+
+.search-container {
+    max-width: $max-width;
+    margin: 0 auto;
+    text-align: center;
+
+    &__input {
+        width: 40%;
+        padding: .8rem;
+        font-weight: 300;
+        font-size: .75rem;
+        margin-top: 2rem;
+        outline: 2px solid white;
+        border: none;
+        border-radius: 15px;
+        transition: width .5s ease;
+
+        &:focus {
+            width: 55%;
+        }
+    }
+}

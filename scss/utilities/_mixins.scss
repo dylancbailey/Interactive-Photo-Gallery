@@ -1,0 +1,7 @@
+// mixins
+@mixin heading($font-weight, $font-size, $shadow, $transform: uppercase,) {
+    font-weight: $font-weight;    
+    font-size: $font-size;
+    text-shadow: -3px 2px 2px rgba(0,0,0, $shadow);
+    text-transform: $transform;
+}

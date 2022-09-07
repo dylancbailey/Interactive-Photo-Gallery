@@ -1,9 +1,6 @@
 // Initialize baguetteBox
 baguetteBox.run('.content__gallery');
 
-// searchFilter.js
-// const search = new Filter('search', 'data-caption');
-
 // Custom search feature
 const img_search = document.getElementById('search');
 img_search.addEventListener('keyup', e => {
@@ -16,7 +13,7 @@ img_search.addEventListener('keyup', e => {
         } else {
             img.classList.add('is-hidden');
         }
-    })
+    });
 });
 
 // Opacity animation
@@ -25,4 +22,3 @@ img_cards.forEach(img => {
     let randomDelay = Math.floor(Math.random() * 500);
     img.style.animation = `fadeIn 1s .${randomDelay}s ease forwards`;
 });
-
