@@ -7,12 +7,12 @@
 body {
   background: white;
   font-family: "Montserrat", sans-serif;
+  background: rgb(231, 111, 81);
+  background: linear-gradient(90deg, rgb(231, 111, 81) 0%, rgb(244, 162, 97) 93%, rgb(244, 162, 97) 100%);
 }
 
 .header {
   width: 100%;
-  background: rgb(231, 111, 81);
-  background: linear-gradient(90deg, rgb(231, 111, 81) 0%, rgb(244, 162, 97) 93%, rgb(244, 162, 97) 100%);
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -36,16 +36,18 @@ body {
   text-align: center;
 }
 .search-container__input {
-  width: 45%;
+  width: 40%;
   padding: 0.8rem;
   font-weight: 300;
+  font-size: 0.75rem;
   margin-top: 2rem;
   outline: 2px solid white;
-  border-radius: 10px;
+  border: none;
+  border-radius: 15px;
   transition: width 0.5s ease, outline 0.2s ease;
 }
 .search-container__input:focus {
-  width: 60%;
+  width: 55%;
   outline: 2px solid #2A9D8F;
 }
 
@@ -67,11 +69,17 @@ input:focus {
 }
 .content__gallery__link {
   text-align: center;
+  opacity: 0;
 }
 
 img {
   max-width: 200px;
   height: auto;
+  box-shadow: -5px 5px 2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+}
+img:hover {
+  transform: scale(1.05);
 }
 
 .footer {
@@ -79,11 +87,22 @@ img {
   margin: 0 auto;
   padding: 0 0 2rem 0;
   text-align: center;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .is-hidden {
   display: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

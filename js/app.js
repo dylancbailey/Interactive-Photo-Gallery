@@ -36,6 +36,8 @@ baguetteBox.run('.content__gallery');
 //     typingTimer = setTimeout(search_img, typeInterval);
 // });
 
+// Search feature
+
 const img_search = document.getElementById('search');
 img_search.addEventListener('keyup', e => {
     let currentValue = e.target.value.toLowerCase();
@@ -48,4 +50,12 @@ img_search.addEventListener('keyup', e => {
             img_caption.classList.add('is-hidden');
         }
     })
+});
+
+// Opacity
+
+const img_cards = document.querySelectorAll('.content__gallery__link');
+img_cards.forEach(img => {
+    let randomDelay = Math.floor(Math.random() * 500);
+    img.style.animation = `fadeIn 1s .${randomDelay}s ease forwards`;
 });
