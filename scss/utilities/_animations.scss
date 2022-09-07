@@ -1,9 +1,11 @@
-// is-hidden
+/************************************
+            ANIMATIONS
+************************************/
 .is-hidden {
     display: none;
 }
 
-// keyframes
+
 @keyframes fadeIn {
     0% {
         opacity: 0;

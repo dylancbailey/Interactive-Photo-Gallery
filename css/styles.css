@@ -307,6 +307,9 @@ template {
   display: none;
 }
 
+/************************************
+            ANIMATIONS
+************************************/
 .is-hidden {
   display: none;
 }
