@@ -1,17 +1,7 @@
 @use '../utilities/variables' as *;
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: $main-font;
-    background: $bg-color;
-    background: $bg-gradient;
-}
-
+/************************************
+            MAIN STYLING
+************************************/
 .content {
     max-width: $max-width;
     display: grid;
@@ -37,9 +27,4 @@ img {
     max-width: 200px;
     height: auto;
     box-shadow: -5px 5px 2px rgba(0,0,0,.2);
-    transition: transform .5s ease;
-
-    &:hover {
-        transform: scale(1.05);
-    }
 }

@@ -16,6 +16,7 @@ img_search.addEventListener('keyup', e => {
     });
 });
 
+
 // Opacity animation
 const img_cards = document.querySelectorAll('.content__gallery__link');
 img_cards.forEach(img => {
