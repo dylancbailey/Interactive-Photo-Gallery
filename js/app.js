@@ -9,13 +9,13 @@ baguetteBox.run('.content__gallery');
 const img_search = document.getElementById('search');
 img_search.addEventListener('keyup', e => {
     let currentValue = e.target.value.toLowerCase();
-    let img = document.querySelectorAll('.content__gallery__link');
+    let img_caption = document.querySelectorAll('.content__gallery__link');
 
-    img.forEach(img_caption => {
-        if (img_caption.getAttribute('data-caption').toLowerCase().includes(currentValue)) {
-            img_caption.classList.remove('is-hidden');
+    img_caption.forEach(img => {
+        if (img.getAttribute('data-caption').toLowerCase().includes(currentValue)) {
+            img.classList.remove('is-hidden');
         } else {
-            img_caption.classList.add('is-hidden');
+            img.classList.add('is-hidden');
         }
     })
 });
