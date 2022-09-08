@@ -337,13 +337,14 @@ body {
   font-family: "Montserrat", sans-serif;
   background: rgb(231, 111, 81);
   background: linear-gradient(90deg, rgb(231, 111, 81) 0%, rgb(244, 162, 97) 93%, rgb(244, 162, 97) 100%);
+  min-height: 100vh;
 }
 
 /************************************
             HEADER STYLING
 ************************************/
 .header {
-  margin: 0.8rem auto 0 auto;
+  margin: auto;
   padding: 2rem;
   text-align: center;
   color: #fff;
@@ -409,7 +410,7 @@ body {
 .content {
   max-width: 1024px;
   display: grid;
-  margin: 1rem auto;
+  margin: auto;
   padding: 2rem;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.2);
@@ -426,11 +427,14 @@ body {
   text-align: center;
   opacity: 0;
 }
-
-img {
+.content__gallery__img {
   max-width: 200px;
   height: auto;
   box-shadow: -5px 5px 3px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+.content__gallery__img:hover {
+  transform: scale(1.05);
 }
 
 /************************************
