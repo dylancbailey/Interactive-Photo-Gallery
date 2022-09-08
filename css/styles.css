@@ -400,6 +400,7 @@ body {
 }
 .clear-btn:hover {
   background-color: #e8765a;
+  cursor: pointer;
 }
 
 /************************************
@@ -416,8 +417,9 @@ body {
 
 .content__gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
   grid-auto-rows: auto;
+  justify-content: center;
   gap: 30px;
 }
 .content__gallery__link {
