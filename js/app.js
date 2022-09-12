@@ -17,14 +17,17 @@ img_search.addEventListener('keyup', e => {
 });
 
 // Clear search
-let images = document.querySelectorAll('.content__gallery__link');
+const images = document.querySelectorAll('.content__gallery__link');
+const btnClear = document.querySelector('.clear-btn');
 
 function clearSearch() {
     img_search.value = "";
-    images.forEach(img => {
-        img.classList.remove('is-hidden');
-    });
+    images.forEach(img => { img.classList.remove('is-hidden'); });
 }
+
+btnClear.addEventListener('click', () => {
+    clearSearch();
+});
 
 // Opacity animation
 const img_cards = document.querySelectorAll('.content__gallery__link');
